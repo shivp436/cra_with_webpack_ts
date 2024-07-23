@@ -1,0 +1,11 @@
+{
+  "name": "react_typescript_webpack_setup",
+  "version": "1.0.0",
+  "description": "Starter template for React Typescript using Webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shivp436",
+  "license": "ISC"
+}
