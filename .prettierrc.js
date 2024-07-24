@@ -1,5 +1,3 @@
-const { jsx } = require('react/jsx-runtime');
-
 module.exports = {
   semi: true,
   trailingComma: 'es5',

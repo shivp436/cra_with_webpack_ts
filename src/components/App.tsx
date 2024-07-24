@@ -2,6 +2,9 @@ import '../styles/styles.css';
 import '../styles/styles.scss';
 import IMAGE from '../assets/logo.png';
 import REACT from '../assets/react.svg';
+// prefer using import for static assets like images, fonts, etc.
+// import will be handled by webpack and will be optimized for production build
+// direct source path will be copied to the build folder as it is, files will not be optimized
 
 const App = () => {
   // document.title = `React Webpack Typescript Starter Template - ${process.env.NODE_ENV} Mode`;
