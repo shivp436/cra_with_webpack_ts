@@ -10,15 +10,14 @@
     "lint": "eslint --fix \"./src/**/*.{js.jsx,ts,tsx,json}\"",
     "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "prepare": "husky"
   },
   "author": "shivp436",
   "license": "ISC",
   "dependencies": {
-    "gh-pages": "^6.1.1",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "webpack-bundle-analyzer": "^4.10.2"
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@babel/core": "^7.24.9",
@@ -43,9 +42,9 @@
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-react": "^7.35.0",
     "eslint-plugin-react-hooks": "^4.6.2",
+    "gh-pages": "^6.1.1",
     "html-webpack-plugin": "^5.6.0",
-    "husky": "^4.3.8",
-    "lint-staged": "^15.2.7",
+    "husky": "^9.1.1",
     "prettier": "^3.3.3",
     "react-refresh": "^0.14.2",
     "sass": "^1.77.8",
@@ -53,21 +52,9 @@
     "style-loader": "^4.0.0",
     "typescript": "^5.5.4",
     "webpack": "^5.93.0",
+    "webpack-bundle-analyzer": "^4.10.2",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.0.4",
     "webpack-merge": "^6.0.1"
-  },
-  "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx,json}": [
-      "eslint --fix"
-    ],
-    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
-      "prettier --write"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   }
 }
